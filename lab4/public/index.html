@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content="width=\, initial-scale=1.0">
+
+	<title>Nodejs</title>
+
+</head>
+<body style="font-family:monospace;">
+<div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+	<a class="navbar-brand" href="#">Nodejs</a>
+	</nav>
+</div>
+<br>
+<br>
+<div class="container">
+  <!-- Content here -->
+
+	<hr>
+	<form action="/control" method = "get">
+
+		<h2> LED Control Panel</h2>
+			<label><input name="LED1" type="checkbox" value="LED1">LED1</label>
+			<br>
+			<label><input name="LED2" type="checkbox" value="LED2">LED2</label>
+			<br>
+			<label><input name="LED3" type="checkbox" value="LED3">LED3</label>
+			<br>
+			<label><input name="LED4" type="checkbox" value="LED4">LED4</label>
+			<div class="form-row align-items-center">
+				<div class="col-auto">
+					<label><input type="radio" name="control" value="on">on</label>
+				</div>
+				<div class="col-auto">
+					<label><input type="radio" name="control" value="off">off</label>
+				</div>
+				<div class="col-auto">
+					<input type="submit" value="Submit" class="btn btn-primary">
+				</div>
+			</div>
+	</form>
+</div>
+<div class="container">
+		<br>
+		<hr>
+		<br>
+	<form action="/switching" method = "get">
+		<h2> LED Switch Frequency</h2>
+			<div class="form-row align-items-center">
+				<div class="col-auto">
+					<label><input type="text" name="times" placeholder="Input a number." ></label>
+				</div>
+				<div class="col-auto">
+					<input type="submit" value="Mode_shine" class="btn btn-primary">
+				</div>
+			</div>
+	</form>
+</div>
+</body>
+</html>
+
